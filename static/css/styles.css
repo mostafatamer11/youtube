@@ -1,0 +1,47 @@
+body {
+    padding-top: 56px;
+    background-color: #f8f9fa;
+}
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+.alert-container {
+    margin-top: 20px;
+}
+
+.form-control, .form-control-file {
+    margin-bottom: 15px;
+}
+
+.container {
+    max-width: 800px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.list-group-item {
+    margin-bottom: 10px;
+}
+
+.video-container {
+    text-align: center;
+}
+
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
