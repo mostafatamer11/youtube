@@ -1,12 +1,13 @@
 {% extends "base.html" %}
 {% block title %}Home{% endblock %}
 {% block content %}
-    <h1>Welcome to Video Platform</h1>
-    <div class="list-group">
+    <h1 class="main-title">Welcome to Video Platform</h1>
+    <!-- <div class="video-card">
+        <img src="{{ url_for('static', filename='assets/video_background.png') }}" alt="">
         {% for video in videos %}
-            <a href="{{ url_for('view_video', video_id=video.id) }}" class="list-group-item list-group-item-action">
+            <a href="{{ url_for('view_video', video_id=video.id) }}">
                 {{ video.title }}
             </a>
         {% endfor %}
-    </div>
+    </div> -->
 {% endblock %}
