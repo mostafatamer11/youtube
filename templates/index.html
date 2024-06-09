@@ -2,12 +2,90 @@
 {% block title %}Home{% endblock %}
 {% block content %}
     <h1 class="main-title">Welcome to Video Platform</h1>
-    <!-- <div class="video-card">
-        <img src="{{ url_for('static', filename='assets/video_background.png') }}" alt="">
-        {% for video in videos %}
-            <a href="{{ url_for('view_video', video_id=video.id) }}">
-                {{ video.title }}
-            </a>
-        {% endfor %}
-    </div> -->
+    <div class="videos-container">
+        <div class="video-card">
+            {% for video in videos %}
+                <img src="{{ url_for('static', filename='assets/video_background.png') }}" alt="">
+                <h2 href="{{ url_for('view_video', video_id=video.id) }}">
+                    {{ video.title }}
+                </h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore suscipit dolor, eos error sint eveniet corrupti odit ratione nulla quidem!
+                </p>
+                <button class="button">
+                    <a href="#">Go to</a>
+                </button>
+            {% endfor %}
+        </div>
+        <div class="video-card">
+            {% for video in videos %}
+                <img src="{{ url_for('static', filename='assets/video_background.png') }}" alt="">
+                <h2 href="{{ url_for('view_video', video_id=video.id) }}">
+                    {{ video.title }}
+                </h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore suscipit dolor, eos error sint eveniet corrupti odit ratione nulla quidem!
+                </p>
+                <button class="button">
+                    <a href="#">Go to</a>
+                </button>
+            {% endfor %}
+        </div>
+        <div class="video-card">
+            {% for video in videos %}
+                <img src="{{ url_for('static', filename='assets/video_background.png') }}" alt="">
+                <h2 href="{{ url_for('view_video', video_id=video.id) }}">
+                    {{ video.title }}
+                </h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore suscipit dolor, eos error sint eveniet corrupti odit ratione nulla quidem!
+                </p>
+                <button class="button">
+                    <a href="#">Go to</a>
+                </button>
+            {% endfor %}
+        </div>
+        <div class="video-card">
+            {% for video in videos %}
+                <img src="{{ url_for('static', filename='assets/video_background.png') }}" alt="">
+                <h2 href="{{ url_for('view_video', video_id=video.id) }}">
+                    {{ video.title }}
+                </h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore suscipit dolor, eos error sint eveniet corrupti odit ratione nulla quidem!
+                </p>
+                <button class="button">
+                    <a href="#">Go to</a>
+                </button>
+            {% endfor %}
+        </div>
+        <div class="video-card">
+            {% for video in videos %}
+                <img src="{{ url_for('static', filename='assets/video_background.png') }}" alt="">
+                <h2 href="{{ url_for('view_video', video_id=video.id) }}">
+                    {{ video.title }}
+                </h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore suscipit dolor, eos error sint eveniet corrupti odit ratione nulla quidem!
+                </p>
+                <button class="button">
+                    <a href="#">Go to</a>
+                </button>
+            {% endfor %}
+        </div>
+        <div class="video-card">
+            {% for video in videos %}
+                <img src="{{ url_for('static', filename='assets/video_background.png') }}" alt="">
+                <h2 href="{{ url_for('view_video', video_id=video.id) }}">
+                    {{ video.title }}
+                </h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore suscipit dolor, eos error sint eveniet corrupti odit ratione nulla quidem!
+                </p>
+                <button class="button">
+                    <a href="#">Go to</a>
+                </button>
+            {% endfor %}
+        </div>
+    </div>
 {% endblock %}

@@ -1,16 +1,18 @@
 {% extends "base.html" %}
 {% block title %}Upload Video{% endblock %}
 {% block content %}
-    <h1>Upload Video</h1>
-    <form method="POST" enctype="multipart/form-data">
-        <div>
-            <label for="title">Title</label>
-            <input type="text" id="title" name="title" required>
+<form class="contact-form" method="POST" enctype="multipart/form-data">
+        <div class="section-title">
+            <h1>Upload Video</h1>
         </div>
-        <div>
+        <div class="input-group">
+            <label for="title">Title</label>
+            <input type="text" id="title" placeholder="Enter the title of the video" name="title" required>
+        </div>
+        <div class="input-group">
             <label for="file">File</label>
             <input type="file" id="file" name="file" required>
         </div>
-        <button type="submit">Upload</button>
+        <button class="button" type="submit">Upload</button>
     </form>
 {% endblock %}

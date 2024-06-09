@@ -1,16 +1,18 @@
 {% extends "base.html" %}
 {% block title %}Login{% endblock %}
 {% block content %}
-    <h1>Login</h1>
-    <form method="POST">
-        <div>
+    <form class="contact-form" method="POST">
+        <div class="section-title">
+            <h1>Login</h1>
+        </div>
+        <div class="input-group">
             <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
+            <input type="email" placeholder="Enter your email" id="email" name="email" required>
         </div>
-        <div>
+        <div class="input-group">
             <label for="password">Password</label>
-            <input type="password" id="password" name="password" required>
+            <input type="password" placeholder="Enter the password" id="password" name="password" required>
         </div>
-        <button type="submit">Login</button>
+        <button class="button" type="submit">Login</button>
     </form>
 {% endblock %}
